@@ -52,7 +52,8 @@ public class PassengerScreen implements Iscreen {
             } else {
                 Ride ride = user.rideRequest(source, destination, numberOfPassengers);
 
-                if (ifFirstRide(userId) || ifsameAreaDicount(destination) || checkBirthday(user.getbirthday())) {
+                
+                if (ifFirstRide(userId) || ifsameAreaDiscount(destination) || checkBirthday(user.getbirthday())) {
 
                     ride.setDiscount(0.1);
                     System.out.println("The discount of that Ride is : 10%");
@@ -316,7 +317,7 @@ public class PassengerScreen implements Iscreen {
         }
     }
 
-    public boolean ifsameAreaDicount(String destination) {
+    public boolean ifsameAreaDiscount(String destination) {
 
         ArrayList<Admin> admins = UserManager.getSystemAdmin();
 

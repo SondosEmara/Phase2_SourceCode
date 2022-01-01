@@ -21,7 +21,7 @@ class Ride {
     private LocalDateTime arrivedTimeToUser;
     private LocalDateTime arrivedTimeToDestination;
     private int numberOfPassengers;
-    private double discount=1;
+    private double discount=0;
 
 
     public double getDiscount(){return discount;}
